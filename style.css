@@ -1,0 +1,168 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+:root {
+ font-size: 62.5%;
+ --color-violet: hsl(257, 40%, 49%);
+ --color-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1.6rem;
+ color: #fff;
+ background: url(images/bg-mobile.svg),
+ linear-gradient(var(--color-violet), var(--color-violet));
+ background-size: cover;
+ width: 100%;
+ min-height: 100vh;
+}
+
+.container {
+ width: 98%;
+ max-width: 37rem;
+ margin: auto;
+}
+
+.header {
+ padding-block: 3rem;
+ margin-bottom: 3rem;
+}
+
+.logo {
+ width: 16rem;
+}
+
+.hero {
+ margin-bottom: 5rem;
+}
+
+.hero__img {
+ max-width: 100%;
+}
+
+.main-section {
+ margin-bottom: 5rem;
+}
+
+.main-content {
+ text-align: center;
+}
+
+.main-title {
+ font-family: 'Poppins', sans-serif;
+ font-size: 2.8rem;
+ line-height: 1.3;
+ margin-bottom: 2rem;
+}
+
+.main-text {
+ font-size: 1.8rem;
+ line-height: 1.6;
+ margin-bottom: 2.5rem;
+}
+
+.btn {
+ font-family: 'Poppins', sans-serif;
+ color: var(--color-violet);
+ border: none;
+ padding: 1.3rem;
+ border-radius: 3.5rem;
+ width: 60%;
+ box-shadow: .5rem .8rem 1rem rgba(0, 0, 0, .2);
+ cursor: pointer;
+ transition: .25s;
+}
+
+.btn:hover {
+ background: var(--color-magenta);
+ color: #fff;
+}
+
+.main-footer {
+ padding: 3rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.social-icon {
+ width: 3.5rem;
+ height: 3.5rem;
+ margin-inline: .6rem;
+ font-style: normal;
+ border: 1px solid;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ transition: .25s;
+}
+
+.social-icon:hover {
+ color: var(--color-magenta);
+}
+
+@media(min-width: 1120px){
+
+ body {
+
+  background: url(images/bg-desktop.svg),
+  linear-gradient(var(--color-violet), var(--color-violet));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+ .container {
+  width: 98%;
+  max-width: 120rem;
+  margin: auto;
+ }
+
+ .header {
+  padding-block: 4rem;
+  margin-bottom: 8rem;
+ }
+
+ .main-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+ }
+
+ .main-content {
+  text-align: left;
+  margin-top: 5rem;
+ }
+
+ .btn {
+  max-width: 20rem;
+ }
+
+ .hero {
+  flex-basis: 60%;
+ }
+
+ .main-title {
+  font-size: 2.6rem;
+ }
+ 
+ .main-text {
+  font-size: 1.7rem;
+ }
+
+ .main-content {
+  flex-basis: 40%;
+ }
+
+ .main-footer {
+  padding: 4rem;
+  justify-content: flex-end;
+ }
+
+}
